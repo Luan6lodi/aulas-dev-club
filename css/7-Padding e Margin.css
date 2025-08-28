@@ -1,0 +1,52 @@
+/*🔹 1. Diferença entre Padding e Margin
+Propriedade	O que faz	Exemplo visual
+padding	Espaço dentro do elemento, entre o conteúdo e a borda	
+
+margin	Espaço fora do elemento, entre a borda e outros elementos	
+
+Resumo rápido:
+
+Padding = “respirar dentro do elemento”
+
+Margin = “respirar fora do elemento”
+*/
+
+/* Padding */
+padding: 10px;          /* topo, direita, baixo, esquerda iguais */
+padding: 10px 20px;     /* 10px topo/baixo, 20px direita/esquerda */
+padding: 10px 15px 20px 5px; /* topo, direita, baixo, esquerda */
+
+/* Margin */
+margin: 15px;           /* igual em todos os lados */
+margin: 10px 20px;      /* 10px topo/baixo, 20px direita/esquerda */
+margin: 5px 10px 15px 20px; /* topo, direita, baixo, esquerda */
+
+/*
+🔹 3. Valores possíveis
+px → pixels fixos.
+
+% → porcentagem do elemento pai.
+
+em / rem → baseado em tamanho da fonte.
+
+auto → automático (útil para centralizar).
+
+*/
+
+div {
+  width: 300px;
+  margin: 0 auto; /* topo/baixo = 0, esquerda/direita centralizado */
+  padding: 20px;  /* espaço dentro do div */
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+/*🔹 4. Dicas rápidas
+
+Use padding para deixar o conteúdo mais “respirado” dentro do elemento.
+
+Use margin para separar elementos entre si.
+
+Combine unidades (px, %, em, rem) para layouts responsivos.
+
+margin: auto é ótimo para centralizar blocos horizontalmente.*/

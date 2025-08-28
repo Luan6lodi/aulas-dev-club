@@ -1,0 +1,53 @@
+/*🔹 O que é responsividade?
+
+É a capacidade de um site se adaptar automaticamente a diferentes tamanhos de tela: celular 📱, tablet 📲 e computador 💻.
+Um site responsivo não precisa de zoom e fica legível em qualquer dispositivo.
+
+
+| Técnica                | Explicação                                                     | Exemplo                                                                  |
+| ---------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **Unidades relativas** | Use `%`, `em`, `rem`, `vw`, `vh` em vez de `px` fixos.         | `width: 80%;` se adapta à tela.                                          |
+| **Media Queries**      | Regras CSS que mudam o estilo de acordo com a largura da tela. | `@media (max-width: 768px) { ... }`                                      |
+| **Flexbox**            | Layout flexível, alinha elementos horizontal/vertical.         | `display: flex; flex-wrap: wrap;`                                        |
+| **Grid**               | Divide a tela em colunas/linhas para layouts complexos.        | `display: grid; grid-template-columns: 1fr 1fr;`                         |
+| **Imagens fluidas**    | Usar `max-width: 100%` e `height: auto`.                       | Imagens que encolhem no celular.                                         |
+| **Viewport meta tag**  | Diz ao navegador como ajustar o site no mobile.                | `<meta name="viewport" content="width=device-width, initial-scale=1.0">` |
+
+👉 Resumindo:
+
+Use unidades relativas.
+
+Sempre adicione a meta viewport.
+
+Trabalhe com flexbox e grid.
+
+Use media queries pra ajustar pontos específicos da tela.
+*/
+
+
+/* Reset básico */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Container flexível */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Caixas */
+.box {
+  flex: 1;
+  padding: 20px;
+  background: lightblue;
+  text-align: center;
+}
+
+/* Responsividade: no celular as caixas ficam em coluna */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,32 @@
+/*🔹 O que é !important?
+
+É uma prioridade máxima que você coloca em uma regra CSS.
+Quando você usa !important, aquela regra vai sobrepor todas as outras, mesmo que exista outra mais específica.
+
+🔹 Ordem de prioridade no CSS (sem !important):
+
+Estilo inline (no próprio HTML → <p style="color:red">).
+
+Seletores mais específicos (id > class > elemento).
+
+Ordem em que aparecem (a última regra escrita vence).
+
+⚡ Mas se tiver !important, ele ignora essa ordem e ganha de tudo.
+
+👉 Resumindo:
+!important = força bruta no CSS.
+Use só quando realmente precisar.
+
+*/
+
+#titulo {
+  color: green;
+}
+
+.titulo {
+  color: red !important;
+}
+
+h1 {
+  color: blue;
+}

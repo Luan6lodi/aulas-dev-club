@@ -1,0 +1,49 @@
+/*| Forma           | Exemplo                            | Observação                                        |
+| --------------- | ---------------------------------- | ------------------------------------------------- |
+| **Nome da cor** | `color: red;`                      | Cores básicas como `blue`, `green`, `yellow` etc. |
+| **Hexadecimal** | `color: #3498db;`                  | Valores de 6 dígitos (`#RRGGBB`).                 |
+| **RGB**         | `color: rgb(52, 152, 219);`        | Valores de 0 a 255 para vermelho, verde e azul.   |
+| **RGBA**        | `color: rgba(52, 152, 219, 0.5);`  | Igual ao RGB, mas com **transparência** (0 a 1).  |
+| **HSL**         | `color: hsl(204, 70%, 53%);`       | Matiz, saturação e luminosidade.                  |
+| **HSLA**        | `color: hsla(204, 70%, 53%, 0.5);` | Igual ao HSL, mas com **transparência**.          |
+*/
+
+/* Nome da cor */
+p {
+  color: red;
+}
+
+/* Hexadecimal */
+h1 {
+  color: #3498db; /* azul */
+}
+
+/* RGB */
+div {
+  background-color: rgb(52, 152, 219);
+}
+
+/* RGBA com transparência */
+section {
+  background-color: rgba(52, 152, 219, 0.3);
+}
+
+/* HSL */
+h2 {
+  color: hsl(204, 70%, 53%);
+}
+
+/* HSLA com transparência */
+article {
+  background-color: hsla(204, 70%, 53%, 0.4);
+}
+
+/*🔹 4. Dicas rápidas
+
+Use cores consistentes para manter o design uniforme.
+
+Prefira variáveis CSS (--nome-cor) para facilitar mudanças.
+
+Combine textos claros sobre fundo escuro e textos escuros sobre fundo claro para melhor leitura.
+
+Teste transparências com RGBA ou HSLA para efeitos suaves.*/

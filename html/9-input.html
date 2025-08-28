@@ -1,0 +1,128 @@
+<!--| Tipo       | Para quê serve               | Exemplo                                           |
+| ---------- | ---------------------------- | ------------------------------------------------- |
+| `text`     | Campo de texto simples       | `<input type="text" name="nome">`                 |
+| `password` | Senha (oculta)               | `<input type="password" name="senha">`            |
+| `email`    | Email (validação automática) | `<input type="email" name="email">`               |
+| `number`   | Números                      | `<input type="number" name="idade">`              |
+| `tel`      | Telefone                     | `<input type="tel" name="telefone">`              |
+| `url`      | Endereço web                 | `<input type="url" name="site">`                  |
+| `date`     | Data                         | `<input type="date" name="nascimento">`           |
+| `color`    | Seletor de cor               | `<input type="color" name="cor">`                 |
+| `checkbox` | Caixa de seleção             | `<input type="checkbox" name="aceito">`           |
+| `radio`    | Botão de opção (grupo)       | `<input type="radio" name="genero" value="masc">` |
+| `file`     | Upload de arquivo            | `<input type="file" name="arquivo">`              |
+| `range`    | Barra deslizante             | `<input type="range" min="0" max="100">`          |
+| `submit`   | Botão para enviar formulário | `<input type="submit" value="Enviar">`            |
+| `reset`    | Botão para limpar formulário | `<input type="reset" value="Limpar">`             |
+-->
+
+<!--4. Dicas rápidas
+
+Sempre use name → necessário para enviar dados.
+
+placeholder é apenas dica visual, não substitui <label> (melhor para acessibilidade).
+
+Combine <label> com for="id-do-input" para melhorar acessibilidade:-->
+
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" />
+
+<!--⚡ Resumo rápido:
+
+<input> é super versátil: texto, número, senha, email, cor, data, seleção, upload…
+
+Tipos diferentes ajudam na validação automática e melhor experiência do usuário.
+
+Sempre combine <label> + name para acessibilidade e envio de dados.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplos de Inputs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h2 {
+        margin-top: 30px;
+        color: darkblue;
+      }
+      form {
+        background: #f2f2f2;
+        padding: 15px;
+        border-radius: 8px;
+        width: 400px;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      input[type="number"],
+      input[type="color"],
+      input[type="range"] {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplos de Inputs em HTML5</h1>
+
+    <!-- Formulário básico -->
+    <h2>Formulário Básico</h2>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Digite seu email"
+      />
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" />
+
+      <label for="nascimento">Data de nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento" />
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpar" />
+    </form>
+
+    <!-- Checkbox e Radio -->
+    <h2>Checkbox e Radio</h2>
+    <form>
+      <label><input type="checkbox" name="aceito" /> Aceito os termos</label>
+
+      <label>Gênero:</label>
+      <input type="radio" name="genero" value="masc" /> Masculino
+      <input type="radio" name="genero" value="fem" /> Feminino
+    </form>
+
+    <!-- Seletor de cor, número e range -->
+    <h2>Cor, Número e Range</h2>
+    <form>
+      <label for="cor">Escolha uma cor:</label>
+      <input type="color" id="cor" name="cor" />
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" min="0" max="120" />
+
+      <label for="nota">Nota:</label>
+      <input type="range" id="nota" name="nota" min="0" max="10" />
+    </form>
+  </body>
+</html>

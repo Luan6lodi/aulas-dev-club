@@ -1,0 +1,62 @@
+/*🔹 O que é position?
+
+É a propriedade que define como um elemento é posicionado no layout, em relação à página ou ao seu elemento pai.
+Geralmente funciona junto com top, right, bottom e left.
+
+
+| Valor      | Explicação                                                                                                                  | Exemplo                                       |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `static`   | Padrão. O elemento segue o fluxo normal da página (sem `top`, `left` etc).                                                  | Elementos aparecem um embaixo do outro.       |
+| `relative` | O elemento fica no fluxo normal, **mas pode ser movido** em relação à sua posição original.                                 | Move 10px pra direita sem sair do espaço.     |
+| `absolute` | O elemento é **removido do fluxo** e posicionado em relação ao **elemento pai mais próximo com `relative` (ou ao `body`)**. | Caixa fixa dentro de outra.                   |
+| `fixed`    | Fica fixo em relação à **tela** (mesmo rolando a página, ele não se move).                                                  | Menu fixo no topo.                            |
+| `sticky`   | Mistura de `relative` e `fixed`. Fica relativo até certo ponto, depois “gruda” na tela ao rolar.                            | Cabeçalho que cola no topo ao rolar a página. |
+
+
+👉 Resumindo:
+
+static → padrão.
+
+relative → move dentro do próprio espaço.
+
+absolute → posição em relação ao pai ou body.
+
+fixed → fixo na tela.
+
+sticky → alterna entre relative e fixed.
+
+
+*/
+
+/* Padrão (static) */
+div {
+  position: static;
+}
+
+/* Relative: move em relação a si mesmo */
+.caixa1 {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+/* Absolute: em relação ao pai com relative */
+.caixa2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Fixed: sempre no mesmo lugar da tela */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Sticky: cola ao rolar */
+.header {
+  position: sticky;
+  top: 0;
+  background: lightgray;
+}

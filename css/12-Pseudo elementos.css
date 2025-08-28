@@ -1,0 +1,69 @@
+/*🔹 O que são pseudo-elementos?
+
+São palavras-chave especiais no CSS que permitem estilizar partes específicas de um elemento, como a primeira letra, a primeira linha ou adicionar conteúdo extra sem precisar criar uma tag no HTML.
+
+Eles sempre usam dois pontos duplos :: (ex: ::before, ::after).
+
+
+| Pseudo-elemento  | O que faz                                          | Exemplo                                    |
+| ---------------- | -------------------------------------------------- | ------------------------------------------ |
+| `::before`       | Insere conteúdo **antes** do elemento.             | Adicionar ícone antes de um título.        |
+| `::after`        | Insere conteúdo **depois** do elemento.            | Adicionar detalhe decorativo.              |
+| `::first-letter` | Seleciona a **primeira letra**.                    | Deixar a 1ª letra de um parágrafo gigante. |
+| `::first-line`   | Seleciona a **primeira linha**.                    | Deixar só a primeira linha em negrito.     |
+| `::selection`    | Estiliza o texto quando o usuário **seleciona**.   | Fundo amarelo ao selecionar texto.         |
+| `::marker`       | Estiliza os marcadores de listas (`<ul>`, `<ol>`). | Trocar bolinha da lista por emoji.         |
+| `::placeholder`  | Estiliza o **texto do placeholder** em inputs.     | Cor cinza clara no input.                  |
+
+
+
+👉 Resumindo:
+
+::before e ::after → adicionam conteúdo extra.
+
+::first-letter / ::first-line → estilizam partes específicas do texto.
+
+::selection → muda estilo do texto selecionado.
+
+::marker → estiliza marcadores de listas.
+
+::placeholder → estiliza texto de placeholder em inputs.
+
+
+
+*/
+
+/* ::before e ::after */
+h1::before {
+  content: "👉 ";
+}
+h1::after {
+  content: " 👈";
+}
+
+/* Primeira letra e primeira linha */
+p::first-letter {
+  font-size: 30px;
+  color: red;
+}
+p::first-line {
+  font-weight: bold;
+}
+
+/* Seleção personalizada */
+p::selection {
+  background: yellow;
+  color: black;
+}
+
+/* Marcador de lista */
+ul li::marker {
+  color: blue;
+  content: "✔ ";
+}
+
+/* Placeholder de input */
+input::placeholder {
+  color: gray;
+  font-style: italic;
+}

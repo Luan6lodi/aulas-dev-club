@@ -1,0 +1,58 @@
+/*| Unidade | O que representa   | Exemplo            |
+| ------- | ------------------ | ------------------ |
+| `px`    | pixels             | `font-size: 16px;` |
+| `pt`    | pontos (impressão) | `font-size: 12pt;` |
+| `cm`    | centímetros        | `width: 10cm;`     |
+| `mm`    | milímetros         | `height: 50mm;`    |
+| `in`    | polegadas          | `width: 2in;`      |
+| `pc`    | picas              | `font-size: 12pc;` |
+
+
+| Unidade | O que representa                                      | Exemplo                                                  |
+| ------- | ----------------------------------------------------- | -------------------------------------------------------- |
+| `%`     | Porcentagem do elemento pai                           | `width: 50%;`                                            |
+| `em`    | Multiplicador do tamanho da **fonte do elemento pai** | `font-size: 2em;` → duas vezes o tamanho da fonte do pai |
+| `rem`   | Multiplicador da **fonte raiz (`<html>`)**            | `font-size: 1.5rem;`                                     |
+| `vw`    | Porcentagem da largura da **viewport**                | `width: 50vw;`                                           |
+| `vh`    | Porcentagem da altura da **viewport**                 | `height: 50vh;`                                          |
+| `vmin`  | Valor menor entre `vw` e `vh`                         | `font-size: 5vmin;`                                      |
+| `vmax`  | Valor maior entre `vw` e `vh`                         | `font-size: 5vmax;`                                      |
+
+
+*/
+
+/* Pixels fixos */
+p {
+  font-size: 16px;
+  width: 300px;
+}
+
+/* Percentual em relação ao pai */
+div {
+  width: 50%;  /* metade do elemento pai */
+}
+
+/* Em e rem */
+h1 {
+  font-size: 2em;  /* duas vezes o tamanho da fonte do pai */
+}
+
+h2 {
+  font-size: 1.5rem; /* 1,5 vezes o tamanho da fonte do HTML raiz */
+}
+
+/* Viewport */
+section {
+  width: 80vw;  /* 80% da largura da tela */
+  height: 50vh; /* 50% da altura da tela */
+}
+
+/*🔹 4. Dicas rápidas
+
+Para textos, prefira em ou rem → mantém proporcionalidade e acessibilidade.
+
+Para largura e altura de elementos, use % ou vw/vh → responsivo.
+
+Para borders ou sombras, px ainda é o mais comum.
+
+Combine unidades para layouts flexíveis e adaptáveis.*/

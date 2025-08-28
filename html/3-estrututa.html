@@ -1,0 +1,119 @@
+<!--| Tag         | Para quê serve                | Observação                                      |
+| ----------- | ----------------------------- | ----------------------------------------------- |
+| `<header>`  | Cabeçalho da página ou seção  | Pode ter logo, menu, título                     |
+| `<nav>`     | Navegação                     | Links principais do site                        |
+| `<main>`    | Conteúdo principal            | Só **um por página**                            |
+| `<section>` | Agrupa conteúdos relacionados | Ex.: sessão "Sobre", "Serviços"                 |
+| `<article>` | Conteúdo independente         | Post, notícia, artigo de blog                   |
+| `<aside>`   | Conteúdo lateral              | Publicidade, links extras                       |
+| `<footer>`  | Rodapé                        | Contato, direitos, links finais                 |
+| `<div>`     | Contêiner genérico            | Usar só quando não tiver tag semântica adequada |
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplo de Elementos Estruturais</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      header,
+      nav,
+      main,
+      section,
+      article,
+      aside,
+      footer {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+      }
+      header {
+        background: #4a90e2;
+        color: white;
+      }
+      nav {
+        background: #f39c12;
+      }
+      main {
+        background: #ecf0f1;
+      }
+      section {
+        background: #bdc3c7;
+      }
+      article {
+        background: #95a5a6;
+      }
+      aside {
+        background: #e67e22;
+      }
+      footer {
+        background: #2c3e50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu Site</h1>
+      <p>Bem-vindo ao exemplo de estrutura HTML5</p>
+    </header>
+
+    <nav>
+      <a href="#sobre">Sobre</a> | <a href="#artigos">Artigos</a> |
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+      <section id="sobre">
+        <h2>Sobre</h2>
+        <p>
+          Este site é um exemplo de como usar elementos estruturais no HTML5.
+        </p>
+      </section>
+
+      <section id="artigos">
+        <h2>Artigos</h2>
+
+        <article>
+          <h3>O que é HTML?</h3>
+          <p>HTML é uma linguagem de marcação para estruturar páginas web.</p>
+        </article>
+
+        <article>
+          <h3>O que é CSS?</h3>
+          <p>CSS define o estilo e aparência dos elementos em uma página.</p>
+        </article>
+      </section>
+
+      <aside>
+        <h2>Links Úteis</h2>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+              >MDN - HTML</a
+            >
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/html/">W3Schools - HTML</a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Meu Site | Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
+
+<!--🔹 3. Dicas rápidas
+
+Use semântica sempre que possível → ajuda na organização, SEO e acessibilidade.
+
+Evite excesso de <div> — só use quando não existir um elemento semântico adequado.
+
+Um site bem estruturado fica mais fácil de estilizar com CSS e manter no futuro.-->

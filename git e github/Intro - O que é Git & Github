@@ -1,0 +1,44 @@
+📌 Git
+
+É um sistema de controle de versão.
+
+Criado por Linus Torvalds (mesmo criador do Linux).
+
+Permite que você:
+
+Salve o histórico do seu código.
+
+Volte para versões anteriores se algo der errado.
+
+Trabalhe em ramificações (branches) diferentes sem bagunçar o código principal.
+
+Colabore com outras pessoas no mesmo projeto sem conflitos (ou pelo menos reduzindo eles 😅).
+
+📍 Exemplo:
+Imagine que você está fazendo um projeto e vai adicionar uma nova funcionalidade.
+Com o Git, você cria uma branch separada, testa e, se der certo, junta com o código principal.
+
+📌 GitHub
+
+É uma plataforma online que usa o Git.
+
+Funciona como uma rede social para programadores + armazenamento na nuvem para códigos.
+
+Permite:
+
+Guardar seus projetos de forma remota.
+
+Compartilhar código com outras pessoas.
+
+Contribuir em projetos de código aberto.
+
+Mostrar seus trabalhos no portfólio (importante para currículo!).
+
+📍 Exemplo:
+Você faz um site no seu PC → usa o Git para versionar → envia para o GitHub → agora seu código está seguro na nuvem e pode ser visto por qualquer pessoa (ou só você, se o repositório for privado).
+
+📝 Resumindo em uma frase:
+
+Git = a ferramenta que controla versões.
+
+GitHub = a plataforma que hospeda esses códigos online e facilita colaboração.

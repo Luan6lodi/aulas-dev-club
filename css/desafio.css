@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-left: 186px;
+  padding-top: 100px;
+}
+
+a {
+  margin-top: 180px;
+  margin-left: 23px;
+}
+
+.LOG {
+  margin-left: 23px;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200px;
+  width: 130px;
+  height: 41px;
+  border-radius: 20.5px;
+  background: #665ae1;
+  border: none;
+}
+
+/* Container principal */
+.section-principal {
+  display: flex; /* ativa o flexbox */
+  align-items: center; /* alinha verticalmente ao centro */
+  justify-content: space-between; /* espaço entre imagem e texto */
+  gap: 40px; /* espaço entre as colunas */
+  padding: 50px; /* distância do conteúdo das bordas */
+}
+
+/* Imagem */
+.section-principal img {
+  width: 400px; /* ou o tamanho que achar melhor */
+  height: auto; /* mantém proporção */
+}
+
+/* Texto ao lado da imagem */
+.texto-principal {
+  max-width: 500px; /* limita largura do texto */
+  font-size: 16px;
+  font-weight: 400; /* você ajustou, então já ok */
+  line-height: 1.5;
+}
+
+

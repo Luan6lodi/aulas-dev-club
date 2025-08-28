@@ -1,0 +1,73 @@
+/*🔹 O que são pseudo-classes?
+
+São “palavras-chave” usadas no CSS para definir um estado especial de um elemento.
+Elas sempre usam um único : (diferente dos pseudo-elementos que usam ::).
+
+Exemplo:
+
+a:hover {
+  color: red;
+}
+
+
+➡️ O link muda de cor quando o mouse passa por cima.
+
+
+| Pseudo-classe            | O que faz                                              | Exemplo                                            |
+| ------------------------ | ------------------------------------------------------ | -------------------------------------------------- |
+| `:hover`                 | Quando o mouse passa em cima.                          | Botão muda de cor ao passar o mouse.               |
+| `:active`                | Enquanto o elemento está sendo clicado.                | Link fica vermelho no clique.                      |
+| `:focus`                 | Quando o elemento recebe foco (ex: input selecionado). | Borda azul em um campo de texto.                   |
+| `:visited`               | Links que já foram visitados.                          | Link roxo após clique.                             |
+| `:first-child`           | Seleciona o **primeiro filho** de um pai.              | Só o 1º `<li>` da lista fica vermelho.             |
+| `:last-child`            | Seleciona o **último filho**.                          | Só o último `<li>` fica azul.                      |
+| `:nth-child(n)`          | Seleciona o filho na posição **n**.                    | O 2º item da lista ganha cor.                      |
+| `:nth-child(even/odd)`   | Seleciona pares (`even`) ou ímpares (`odd`).           | Linhas da tabela com listras.                      |
+| `:not(selector)`         | Seleciona tudo que **não** for o seletor.              | Estiliza todos `<p>` exceto com classe “especial”. |
+| `:checked`               | Checkbox ou radio marcado.                             | Caixa marcada muda de cor.                         |
+| `:disabled` / `:enabled` | Inputs desativados ou habilitados.                     | Input cinza quando desativado.                     |
+| `:required`              | Campos de formulário obrigatórios.                     | Campo fica com borda vermelha.                     |
+| `:empty`                 | Seleciona elementos sem conteúdo.                      | `<div></div>` vazio pode ser estilizado.           |
+
+*/
+
+/* Links */
+a:hover {
+  color: red;
+}
+a:visited {
+  color: purple;
+}
+a:active {
+  color: blue;
+}
+
+/* Inputs */
+input:focus {
+  border: 2px solid blue;
+}
+input:disabled {
+  background: lightgray;
+}
+input:checked {
+  outline: 2px solid green;
+}
+
+/* Filhos */
+ul li:first-child {
+  color: red;
+}
+ul li:last-child {
+  color: blue;
+}
+ul li:nth-child(2) {
+  font-weight: bold;
+}
+ul li:nth-child(odd) {
+  background: #f0f0f0;
+}
+
+/* Negação */
+p:not(.especial) {
+  color: gray;
+}

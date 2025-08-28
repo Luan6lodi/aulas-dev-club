@@ -1,0 +1,53 @@
+/*🔹 O que é display?
+É a propriedade que define como um elemento HTML será exibido (em linha, em bloco, em grid, etc).
+
+| Valor          | Explicação                                                                                          | Exemplo visual                           |
+| -------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| `block`        | O elemento ocupa **toda a largura disponível** e quebra a linha (como `<div>`, `<p>`, `<section>`). | !\[█] Ocupa a linha toda                 |
+| `inline`       | O elemento **não quebra a linha** e só ocupa o espaço do conteúdo (como `<span>`, `<a>`).           | Texto \[link] texto                      |
+| `inline-block` | Combina os dois: **fica em linha**, mas permite definir `width`, `height`, `margin`, etc.           | \[Caixa]\[Caixa] lado a lado             |
+| `flex`         | Cria um **container flexível** para organizar itens (muito usado em layouts modernos).              | Ex: menu com itens alinhados lado a lado |
+| `grid`         | Cria um **sistema de grade**, perfeito para layouts complexos.                                      | Ex: cards organizados em colunas/linhas  |
+| `none`         | Oculta o elemento (não aparece na página).                                                          | Elemento some totalmente                 |
+| `inline-flex`  | Igual ao `flex`, mas funciona em **linha** (não quebra).                                            | Elementos alinhados em linha flexível    |
+
+
+*/
+
+/* Elemento em bloco (padrão do <div>) */
+div {
+  display: block;
+}
+
+/* Elemento em linha */
+span {
+  display: inline;
+}
+
+/* Caixas lado a lado */
+.caixa {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background: lightblue;
+  margin: 5px;
+}
+
+/* Layout com Flexbox */
+.container {
+  display: flex;
+  justify-content: space-between; /* espaço entre itens */
+  align-items: center; /* alinhamento vertical */
+}
+
+/*👉 Resumindo:
+
+block → ocupa linha inteira.
+
+inline → fica na mesma linha.
+
+inline-block → fica na linha mas aceita dimensões.
+
+flex / grid → usados para layouts modernos.
+
+none → esconde o elemento.*/

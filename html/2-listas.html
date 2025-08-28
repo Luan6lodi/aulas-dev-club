@@ -1,0 +1,94 @@
+<!--| Tipo                   | Tag usada                | Quando usar                      | Exemplo rápido         |
+| ---------------------- | ------------------------ | -------------------------------- | ---------------------- |
+| **Lista não ordenada** | `<ul>` (unordered list)  | Quando a ordem **não importa**   | lista de compras       |
+| **Lista ordenada**     | `<ol>` (ordered list)    | Quando a ordem **importa**       | ranking, passo a passo |
+| **Lista de definição** | `<dl>` (definition list) | Para pares **termo + descrição** | glossário, FAQ         |
+
+2. Estrutura básica
+
+Cada item em ul ou ol é marcado com <li> (list item).
+
+Em dl, usamos <dt> (termo) e <dd> (descrição).
+
+
+| Atributo   | Onde usar | O que faz                            | Exemplo                    |
+| ---------- | --------- | ------------------------------------ | -------------------------- |
+| `type`     | `<ol>`    | muda estilo da numeração             | `type="A"` → A, B, C       |
+| `start`    | `<ol>`    | muda número inicial                  | `start="5"` → começa no 5  |
+| `reversed` | `<ol>`    | ordem invertida                      | `<ol reversed>`            |
+| `type`     | `<ul>`    | muda marcador (depende do navegador) | `type="square"` → quadrado |
+
+    -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplos de Listas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h2 {
+        margin-top: 30px;
+        color: darkblue;
+      }
+      dl {
+        background: #f5f5f5;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      dt {
+        font-weight: bold;
+        margin-top: 8px;
+      }
+      dd {
+        margin-left: 20px;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Estudos de Listas no HTML5</h1>
+
+    <!-- Lista não ordenada -->
+    <h2>Lista de Compras (ul)</h2>
+    <ul>
+      <li>Pão</li>
+      <li>Leite</li>
+      <li>Café</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <h2>Passos para estudar HTML (ol)</h2>
+    <ol>
+      <li>Abrir o VS Code</li>
+      <li>Criar um arquivo index.html</li>
+      <li>Escrever a estrutura básica</li>
+      <li>Salvar e abrir no navegador</li>
+    </ol>
+
+    <!-- Lista ordenada personalizada -->
+    <h2>Lista Ordenada Personalizada</h2>
+    <ol type="A" start="3" reversed>
+      <li>Primeiro</li>
+      <li>Segundo</li>
+      <li>Terceiro</li>
+    </ol>
+
+    <!-- Lista de definição -->
+    <h2>Glossário (dl)</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação para estruturar páginas.</dd>
+
+      <dt>CSS</dt>
+      <dd>Folhas de estilo usadas para aparência.</dd>
+
+      <dt>JS</dt>
+      <dd>Linguagem de programação para interatividade.</dd>
+    </dl>
+  </body>
+</html>

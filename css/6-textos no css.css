@@ -1,0 +1,75 @@
+/*| Propriedade       | O que faz                  | Exemplo                           |
+| ----------------- | -------------------------- | --------------------------------- |
+| `color`           | Cor do texto               | `color: #3498db;`                 |
+| `font-size`       | Tamanho da fonte           | `font-size: 16px;`                |
+| `font-weight`     | Espessura da fonte         | `font-weight: bold;`              |
+| `font-family`     | Tipo de fonte              | `font-family: Arial, sans-serif;` |
+| `font-style`      | Estilo da fonte            | `font-style: italic;`             |
+| `line-height`     | Altura da linha            | `line-height: 1.5;`               |
+| `letter-spacing`  | Espaçamento entre letras   | `letter-spacing: 2px;`            |
+| `word-spacing`    | Espaçamento entre palavras | `word-spacing: 4px;`              |
+| `text-align`      | Alinhamento do texto       | `text-align: center;`             |
+| `text-transform`  | Maiúsculas/minúsculas      | `text-transform: uppercase;`      |
+| `text-decoration` | Decoração do texto         | `text-decoration: underline;`     |
+| `text-shadow`     | Sombra do texto            | `text-shadow: 2px 2px 5px gray;`  |
+*/
+
+/* Cor e fonte */
+p {
+  color: #2c3e50;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+/* Negrito e itálico */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Espaçamento e altura de linha */
+h1 {
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Transformação de texto */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Decoração e sombra */
+a {
+  text-decoration: none;
+  color: #3498db;
+  text-shadow: 1px 1px 2px gray;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*🔹 3. Dicas rápidas
+
+Sempre combine font-family + font-size + line-height para legibilidade.
+
+Use text-align para centralizar títulos ou alinhar textos específicos.
+
+letter-spacing e word-spacing ajudam a deixar o texto mais “respirado”.
+
+text-shadow dá destaque, mas use com moderação.
+
+text-transform é ótimo para padronizar maiúsculas/minúsculas em títulos e menus.*/

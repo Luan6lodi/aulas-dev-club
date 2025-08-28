@@ -1,0 +1,59 @@
+<!--| Atributo         | O que faz                                                            | Exemplo                       |
+| ---------------- | -------------------------------------------------------------------- | ----------------------------- |
+| `src`            | Define o caminho da imagem                                           | `src="img/logo.png"`          |
+| `alt`            | Texto alternativo caso a imagem não carregue                         | `alt="Logo da empresa"`       |
+| `width`          | Largura da imagem                                                    | `width="200"`                 |
+| `height`         | Altura da imagem                                                     | `height="150"`                |
+| `title`          | Texto exibido ao passar o mouse                                      | `title="Clique para ampliar"` |
+| `loading="lazy"` | Carrega a imagem apenas quando aparecer na tela (otimiza desempenho) | `<img loading="lazy">`        |
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplos de Imagens</title>
+  </head>
+  <body>
+    <h1>Exemplos de uso da tag &lt;img&gt;</h1>
+
+    <!-- Imagem local -->
+    <h2>Imagem Local</h2>
+    <img src="img/logo.png" alt="Logo da empresa" width="120" />
+
+    <!-- Imagem externa -->
+    <h2>Imagem Externa</h2>
+    <img
+      src="https://www.w3schools.com/html/img_girl.jpg"
+      alt="Garota com chapéu"
+      width="200"
+    />
+
+    <!-- Imagem com link -->
+    <h2>Imagem como Link</h2>
+    <a href="https://exemplo.com">
+      <img src="img/logo.png" alt="Clique e vá para o site" width="150" />
+    </a>
+
+    <!-- Imagem com lazy loading -->
+    <h2>Imagem com Lazy Loading</h2>
+    <img
+      src="img/foto-grande.jpg"
+      alt="Foto grande"
+      width="400"
+      loading="lazy"
+    />
+  </body>
+</html>
+
+<!--⚡ Resumo rápido:
+
+Sempre use alt (boa prática!).
+
+Use caminhos relativos (img/logo.png) ou URLs externas.
+
+Pode controlar tamanho com width e height.
+
+Pode usar imagens como links.
+
+Use loading="lazy" em imagens grandes para melhorar a performance.-->

@@ -1,0 +1,293 @@
+/*| Seletor    | O que seleciona                  | Exemplo                                                                              |
+| ---------- | -------------------------------- | ------------------------------------------------------------------------------------ |
+| `elemento` | Todos os elementos do tipo       | `p { color: blue; }` → todos os parágrafos ficam azuis                               |
+| `.classe`  | Elementos com determinada classe | `.destaque { font-weight: bold; }` → todos com `class="destaque"` ficam em negrito   |
+| `#id`      | Elemento com determinado id      | `#cabecalho { font-size: 24px; }` → apenas o elemento com `id="cabecalho"` é afetado |
+| `*`        | Todos os elementos               | `* { margin: 0; padding: 0; }` → remove margens e padding de todos os elementos      |
+
+
+| Seletor               | O que seleciona                            | Exemplo                                                                       |
+| --------------------- | ------------------------------------------ | ----------------------------------------------------------------------------- |
+| `elemento.classe`     | Elemento específico com determinada classe | `p.destaque { color: red; }`                                                  |
+| `elemento elemento`   | Elemento dentro de outro elemento          | `div p { color: green; }` → parágrafos dentro de divs                         |
+| `elemento > elemento` | Elemento filho direto                      | `div > p { color: orange; }` → apenas parágrafos filhos diretos de div        |
+| `elemento + elemento` | Elemento imediatamente após outro          | `h1 + p { font-size: 18px; }` → parágrafo logo após h1                        |
+| `elemento ~ elemento` | Todos os elementos irmãos seguintes        | `h1 ~ p { color: gray; }` → todos parágrafos depois de h1 na mesma hierarquia |
+
+
+| Pseudo-classe  | O que faz                             | Exemplo                                   |
+| -------------- | ------------------------------------- | ----------------------------------------- |
+| `:hover`       | Quando o mouse passa sobre o elemento | `button:hover { background-color: red; }` |
+| `:focus`       | Quando o elemento está ativo/focado   | `input:focus { border-color: green; }`    |
+| `:first-child` | Primeiro filho de um elemento         | `p:first-child { font-weight: bold; }`    |
+| `:last-child`  | Último filho de um elemento           | `p:last-child { color: gray; }`           |
+
+
+| Pseudo-elemento | O que faz                          | Exemplo                        |
+| --------------- | ---------------------------------- | ------------------------------ |
+| `::before`      | Insere conteúdo antes do elemento  | `p::before { content: "→ "; }` |
+| `::after`       | Insere conteúdo depois do elemento | `p::after { content: " ✓"; }`  |
+
+
+
+*/
+
+/* ==============================
+   Reset básico e corpo
+   ============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+}
+
+/* ==============================
+   Cabeçalhos e Títulos
+   ============================== */
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+}
+
+/* ==============================
+   Parágrafos
+   ============================== */
+p {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Classe de destaque */
+.destaque {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Pseudo-elementos nos parágrafos */
+p::before {
+  content: "★ ";
+}
+
+p::after {
+  content: " ☆";
+}
+
+/* ==============================
+   Links
+   ============================== */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* ==============================
+   Listas
+   ============================== */
+ul,
+ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* ==============================
+   Tabelas
+   ============================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+/* ==============================
+   Imagens
+   ============================== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* ==============================
+   Vídeos e iFrames
+   ============================== */
+video,
+iframe {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* ==============================
+   Inputs e Forms
+   ============================== */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="color"],
+input[type="range"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Checkbox e Radio */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* ==============================
+   Botões
+   ============================== */
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: #357abd;
+}
+
+/* ==============================
+   Formulários específicos
+   ============================== */
+form {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+/* ==============================
+   Seções semânticas
+   ============================== */
+header,
+footer,
+main,
+section,
+article,
+aside,
+nav {
+  display: block;
+  margin-bottom: 20px;
+}
+
+header,
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+nav a {
+  margin-right: 15px;
+}
+
+/* ==============================
+   Responsividade básica
+   ============================== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/*✅ O que este CSS cobre:
+
+Reset básico e corpo da página.
+
+Cabeçalhos, parágrafos e pseudo-elementos.
+
+Links, listas, tabelas.
+
+Imagens, vídeos e iframes.
+
+Inputs, formulários e botões (com hover e focus).
+
+Seções semânticas (header, footer, main, section, article, aside, nav).
+
+Responsividade básica para telas menores.*/

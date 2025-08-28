@@ -1,0 +1,36 @@
+/*| Seletor           | O que seleciona                 | Exemplo                           |
+| ----------------- | ------------------------------- | --------------------------------- |
+| `elemento`        | Todos os elementos do tipo      | `p { color: red; }`               |
+| `.classe`         | Elementos com a classe          | `.menu { background: gray; }`     |
+| `#id`             | Elemento com o id               | `#cabecalho { font-size: 20px; }` |
+| `*`               | Todos os elementos              | `* { margin: 0; padding: 0; }`    |
+| `elemento.classe` | Específico de elemento e classe | `p.destaque { color: green; }`    |
+
+
+| Propriedade        | O que faz                 | Exemplo                           |
+| ------------------ | ------------------------- | --------------------------------- |
+| `color`            | Cor do texto              | `color: red;`                     |
+| `background-color` | Cor de fundo              | `background-color: yellow;`       |
+| `font-size`        | Tamanho da fonte          | `font-size: 16px;`                |
+| `font-family`      | Tipo de fonte             | `font-family: Arial, sans-serif;` |
+| `text-align`       | Alinhamento do texto      | `text-align: center;`             |
+| `margin`           | Espaço fora do elemento   | `margin: 10px;`                   |
+| `padding`          | Espaço dentro do elemento | `padding: 5px;`                   |
+| `border`           | Borda do elemento         | `border: 1px solid black;`        |
+| `width` / `height` | Largura / altura          | `width: 200px; height: 100px;`    |
+
+
+
+⚡ Resumo rápido:
+
+CSS estiliza o HTML (cores, fontes, tamanhos, espaçamento).
+
+Pode ser inline, interno ou externo (externo é melhor prática).
+
+Use seletores (elemento, .classe, #id) para aplicar estilos.
+
+Combine várias propriedades para criar páginas bonitas e organizadas.
+
+
+*/
+

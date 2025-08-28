@@ -1,0 +1,74 @@
+<!--| Atributo          | O que faz                                       | Exemplo                   |
+| ----------------- | ----------------------------------------------- | ------------------------- |
+| `src`             | Página ou conteúdo que vai carregar             | `src="outra-pagina.html"` |
+| `width`           | Largura do iframe                               | `width="600"`             |
+| `height`          | Altura do iframe                                | `height="400"`            |
+| `title`           | Título descritivo (acessibilidade)              | `title="Mapa do Google"`  |
+| `frameborder`     | Define borda (0 = sem borda)                    | `frameborder="0"`         |
+| `allowfullscreen` | Permite tela cheia (em vídeos)                  | `allowfullscreen`         |
+| `loading="lazy"`  | Carrega só quando aparecer na tela              | `<iframe loading="lazy">` |
+| `name`            | Nome do iframe (usado com links que abrem nele) | `name="meuFrame"`         |
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplos de iFrame</title>
+  </head>
+  <body>
+    <h1>Exemplos de &lt;iframe&gt;</h1>
+
+    <!-- Página interna -->
+    <h2>Página interna</h2>
+    <iframe
+      src="sobre.html"
+      width="500"
+      height="300"
+      title="Página Sobre"
+    ></iframe>
+
+    <!-- Google Maps -->
+    <h2>Google Maps</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.058220356741!2d-43.21048768503425!3d-22.90353998501284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f6067ab3b0f%3A0x8bbcb1a3bfc2f5c9!2sRio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1673112345678"
+      width="600"
+      height="400"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      title="Mapa do Rio de Janeiro"
+    >
+    </iframe>
+
+    <!-- YouTube -->
+    <h2>YouTube</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="Vídeo no YouTube"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+
+    <!-- Navegação dentro do iframe -->
+    <h2>Navegação dentro do iframe</h2>
+    <a href="sobre.html" target="meuFrame">Abrir Sobre</a> |
+    <a href="contato.html" target="meuFrame">Abrir Contato</a>
+
+    <iframe name="meuFrame" width="600" height="300" title="Navegação"></iframe>
+  </body>
+</html>
+
+<!--⚡ Resumo rápido:
+
+<iframe> = janela que carrega outra página/site.
+
+Pode exibir páginas internas, mapas, vídeos, formulários etc.
+
+Use width e height para controlar tamanho.
+
+Pode navegar dentro dele com name + target.-->

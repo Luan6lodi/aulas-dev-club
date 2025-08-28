@@ -1,0 +1,78 @@
+<!--| Tag         | Função                                               |
+| ----------- | ---------------------------------------------------- |
+| `<table>`   | Cria a tabela                                        |
+| `<tr>`      | Cria uma linha                                       |
+| `<th>`      | Cabeçalho (texto fica em **negrito e centralizado**) |
+| `<td>`      | Dado normal (célula)                                 |
+| `<caption>` | Título da tabela                                     |
+| `<thead>`   | Agrupa o cabeçalho                                   |
+| `<tbody>`   | Agrupa o corpo (dados principais)                    |
+| `<tfoot>`   | Agrupa o rodapé                                      |
+-->
+
+<style>
+  table {
+    border-collapse: collapse; /* junta as bordas */
+    width: 60%;
+    margin: 20px 0;
+  }
+  th,
+  td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background: #4a90e2;
+    color: white;
+  }
+  tr:nth-child(even) {
+    background: #f2f2f2; /* zebra effect */
+  }
+</style>
+
+<table>
+  <caption>
+    Tabela de Produtos
+  </caption>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Estoque</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Teclado</td>
+      <td>R$ 120,00</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>R$ 80,00</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Monitor</td>
+      <td>R$ 950,00</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--⚡ Resumo rápido:
+
+<table> → cria a tabela.
+
+<tr> → linha.
+
+<th> → cabeçalho.
+
+<td> → dado.
+
+colspan → mescla colunas.
+
+rowspan → mescla linhas.
+
+Use CSS para deixar a tabela mais bonita.-->

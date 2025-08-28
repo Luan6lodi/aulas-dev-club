@@ -1,0 +1,14 @@
+/*| Método  | Onde o CSS vai                      | Para que serve                     | Exemplo                                      |
+| ------- | ----------------------------------- | ---------------------------------- | -------------------------------------------- |
+| Inline  | direto no elemento                  | rápido e pontual                   | `<p style="color:red;">Oi</p>`               |
+| Interno | dentro da tag `<style>` no `<head>` | apenas essa página                 | `<style>p{color:red;}</style>`               |
+| Externo | arquivo separado `.css`             | várias páginas, melhor organização | `<link rel="stylesheet" href="estilos.css">` |
+*/
+
+p {
+  color: blue;
+  font-size: 16px;
+}
+h1 {
+  color: darkred;
+}

@@ -1,0 +1,98 @@
+<!--| Atributo   | Para quê serve                  | Exemplo                                         |
+| ---------- | ------------------------------- | ----------------------------------------------- |
+| `href`     | destino do link                 | `href="https://exemplo.com"`                    |
+| `target`   | onde abrir                      | `target="_blank"` (nova aba)                    |
+| `rel`      | relação/segurança               | `rel="noopener noreferrer"` quando usa `_blank` |
+| `download` | baixa o arquivo em vez de abrir | `download` ou `download="nome.pdf"`             |
+| `title`    | dica ao passar o mouse          | `title="Ir ao site"`                            |
+-->
+
+<!--Links internos precisam de um id no destino: <h2 id="contato">…</h2> e <a href="#contato">…</a>.
+
+Caminhos relativos dependem da estrutura de pastas (ex.: paginas/sobre.html, ../outra.html).
+
+Usou target="_blank"? coloque rel="noopener noreferrer" por segurança e performance.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplos de Links</title>
+    <style>
+      /* só pra ficar bonitinho no exemplo */
+      .btn {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+      nav a {
+        margin-right: 12px;
+      }
+      section {
+        margin: 24px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Links no HTML5</h1>
+
+    <!-- 1) Links de navegação interna (âncoras) -->
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- 2) Link externo (abre em nova aba com segurança) -->
+    <p>
+      Visite o site do
+      <a
+        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Documentação da tag &lt;a&gt;"
+      >
+        MDN sobre &lt;a&gt; </a
+      >.
+    </p>
+
+    <!-- 3) Link para página interna do seu projeto (caminho relativo) -->
+    <p>
+      Leia mais em <a href="paginas/sobre.html">paginas/sobre.html</a>.
+      <!-- estrutura de pastas: /index.html e /paginas/sobre.html -->
+    </p>
+
+    <!-- 4) Link que faz download de um arquivo -->
+    <p>Baixe o PDF: <a href="arquivos/guia.pdf" download>Guia em PDF</a></p>
+
+    <!-- 5) Link de e-mail e telefone -->
+    <p>
+      <a href="mailto:contato@exemplo.com">Enviar e-mail</a> |
+      <a href="tel:+5511999999999">Ligar</a>
+    </p>
+
+    <!-- 6) "Botão" que na verdade é um link -->
+    <p>
+      <a
+        class="btn"
+        href="https://exemplo.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Acessar site
+      </a>
+    </p>
+
+    <section id="sobre">
+      <h2>Seção: Sobre</h2>
+      <p>Este é o destino do link interno #sobre.</p>
+      <p><a href="#topo">Voltar ao topo (exige um id="topo")</a></p>
+    </section>
+
+    <section id="contato">
+      <h2>Seção: Contato</h2>
+      <p>Este é o destino do link interno #contato.</p>
+    </section>
+  </body>
+</html>

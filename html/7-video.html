@@ -1,0 +1,61 @@
+<!--| Atributo           | O que faz                                                    | Exemplo                     |
+| ------------------ | ------------------------------------------------------------ | --------------------------- |
+| `controls`         | Mostra os controles de reprodução                            | `<video controls>`          |
+| `autoplay`         | Reproduz automaticamente (alguns navegadores exigem `muted`) | `<video autoplay muted>`    |
+| `muted`            | Começa sem som                                               | `<video muted>`             |
+| `loop`             | Repete o vídeo em loop                                       | `<video loop>`              |
+| `poster`           | Imagem de capa antes do play                                 | `<video poster="capa.jpg">` |
+| `width` / `height` | Define tamanho                                               | `<video width="400">`       |
+-->
+
+<!--Vídeo do YouTube (embed)
+
+Você pode incorporar vídeos de plataformas externas (YouTube, Vimeo etc) usando <iframe>:-->
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+>
+</iframe>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplos de Vídeos</title>
+  </head>
+  <body>
+    <h1>Vídeos no HTML5</h1>
+
+    <!-- Vídeo simples -->
+    <h2>Vídeo Local</h2>
+    <video src="videos/exemplo.mp4" controls width="400" poster="img/capa.jpg">
+      Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <!-- Vídeo com múltiplos formatos -->
+    <h2>Vídeo com múltiplos formatos</h2>
+    <video controls width="500" loop muted>
+      <source src="videos/exemplo.mp4" type="video/mp4" />
+      <source src="videos/exemplo.webm" type="video/webm" />
+      Seu navegador não suporta vídeos em HTML5.
+    </video>
+
+    <!-- Vídeo do YouTube -->
+    <h2>Vídeo do YouTube</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+  </body>
+</html>

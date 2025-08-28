@@ -1,0 +1,70 @@
+<!--| Tipo            | Tag / Atributo          | Função                                                          |
+| --------------- | ----------------------- | --------------------------------------------------------------- |
+| Botão genérico  | `<button>`              | Pode executar qualquer ação via JavaScript ou enviar formulário |
+| Botão de submit | `<input type="submit">` | Envia o formulário                                              |
+| Botão de reset  | `<input type="reset">`  | Limpa os campos do formulário                                   |
+| Botão comum     | `<input type="button">` | Apenas um botão que precisa de JavaScript para funcionar        |
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exemplos de Botões</title>
+    <style>
+      button,
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 10px 20px;
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      button:hover,
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #357abd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplos de Botões no HTML5</h1>
+
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Digite seu nome"
+      /><br />
+
+      <!-- Botão submit -->
+      <input type="submit" value="Enviar" />
+
+      <!-- Botão reset -->
+      <input type="reset" value="Limpar" />
+
+      <!-- Botão genérico -->
+      <button type="button" onclick="alert('Você clicou no botão!')">
+        Clique Aqui
+      </button>
+    </form>
+  </body>
+</html>
+
+<!--⚡ Resumo rápido:
+
+<button> → botão genérico, pode ter texto ou HTML interno.
+
+<input type="submit"> → envia formulário.
+
+<input type="reset"> → limpa formulário.
+
+<input type="button"> → precisa de JavaScript para funcionar.
+
+Sempre combine CSS para melhorar aparência e interatividade.-->
