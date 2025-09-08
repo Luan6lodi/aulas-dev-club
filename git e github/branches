@@ -1,0 +1,42 @@
+O que é uma Branch no Git?
+
+Uma branch (ramificação) é como uma linha do tempo paralela dentro do seu projeto.
+
+No branch principal (geralmente chamado main ou master), você tem a versão estável do código.
+
+Quando você cria uma nova branch, está criando uma cópia dessa linha do tempo para trabalhar separado, sem mexer no que já está pronto.
+
+👉 Pense em uma árvore:
+
+O tronco é o main.
+
+Cada galho (branch) é uma nova ideia ou funcionalidade sendo desenvolvida.
+
+Por que usar branches?
+
+Trabalhar em novas funcionalidades sem bagunçar o código principal.
+
+Testar ideias sem comprometer a versão estável.
+
+Colaboração: cada dev pode criar sua branch e depois juntar (merge) ao main.
+
+| Comando                          | Função                                        |
+| -------------------------------- | --------------------------------------------- |
+| `git branch`                     | Lista todas as branches do repositório        |
+| `git branch nome-da-branch`      | Cria uma nova branch                          |
+| `git checkout nome-da-branch`    | Vai para a branch escolhida                   |
+| `git switch nome-da-branch`      | (mesma coisa que checkout, mas mais moderno)  |
+| `git checkout -b nome-da-branch` | Cria e já muda para a branch                  |
+| `git merge nome-da-branch`       | Junta as alterações de uma branch com a atual |
+| `git branch -d nome-da-branch`   | Deleta uma branch (se já foi mesclada)        |
+
+
+# Você está no main
+git checkout -b nova-funcionalidade
+# agora trabalha nessa branch separada
+
+# depois de terminar
+git checkout main
+git merge nova-funcionalidade
+
+
