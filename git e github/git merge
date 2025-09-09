@@ -1,0 +1,54 @@
+O comando git merge serve para juntar o histórico de duas branches diferentes. Normalmente, você está em uma branch (ex: main) e quer trazer as mudanças de outra branch (ex: feature).
+
+🔹 Fluxo básico
+
+Primeiro, você precisa estar na branch que vai receber as alterações:
+
+git checkout main
+
+
+ou (nas versões novas do Git):
+
+git switch main
+
+
+Depois, roda o merge com a branch que quer unir:
+
+git merge feature
+
+
+👉 Isso vai trazer tudo que está em feature para dentro de main.
+
+| Tipo             | Como funciona                                                                                 | Quando acontece                                                            |
+| ---------------- | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **Fast-forward** | O ponteiro da branch simplesmente “anda” até o commit mais recente, sem criar um novo commit. | Quando a branch de destino está **atrasada** mas não tem commits próprios. |
+| **Merge commit** | O Git cria um **novo commit** juntando as duas histórias.                                     | Quando a branch de destino já tem commits diferentes e precisa mesclar.    |
+
+
+🔹 Exemplo visual
+
+Antes do merge:
+
+main:    A---B
+             \
+feature:      C---D
+
+
+Depois do merge (com merge commit):
+
+main:    A---B-------E
+             \     /
+feature:      C---D
+
+
+(E = commit de merge)
+
+🔹 Possíveis conflitos
+
+Se as duas branches alteraram a mesma linha de um arquivo, o Git não sabe qual versão usar → acontece um merge conflict.
+Você vai precisar editar manualmente os arquivos, decidir o que fica e depois rodar:
+
+git add .
+git commit
+
+
