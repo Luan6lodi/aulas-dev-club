@@ -1,4 +1,4 @@
-console.log("tanto faz")
+console.log("tanto faz");
 
 /*
 🔹 1. Executar JavaScript no navegador
