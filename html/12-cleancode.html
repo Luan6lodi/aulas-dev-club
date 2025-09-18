@@ -10,28 +10,28 @@
 | **Tratamento de erros**               | Sempre lide com possíveis erros ou inputs inválidos, mesmo em HTML/JS.                    |
 -->
 
-🔹 3. Dicas rápidas de Clean Code em HTML
+🔹 3. Dicas rápidas de Clean Code em HTML Use indentação consistente (2 ou 4
+espaços). Separe CSS, JS e HTML em arquivos diferentes. Use tags semânticas (
+<header>
+  ,
+  <main>
+    ,
+    <footer>
+      ) em vez de
+      <div>
+        genéricas. Nomes de classes e IDs claros: menuPrincipal, btnEnviar.
+        Evite inline styles (style="...") sempre que possível. Comente só quando
+        necessário, principalmente para explicar decisões complexas. ⚡ Resumo
+        rápido: Clean Code = legível, consistente, organizado e sem duplicações.
+        Se aplica a HTML, CSS, JS e qualquer linguagem. Segue boas práticas
+        agora, e você economiza tempo e evita bugs no futuro.
 
-Use indentação consistente (2 ou 4 espaços).
+        <!-- ruim -->
+        <input type="text" name="x" />
 
-Separe CSS, JS e HTML em arquivos diferentes.
-
-Use tags semânticas (<header>, <main>, <footer>) em vez de <div> genéricas.
-
-Nomes de classes e IDs claros: menuPrincipal, btnEnviar.
-
-Evite inline styles (style="...") sempre que possível.
-
-Comente só quando necessário, principalmente para explicar decisões complexas.
-
-
-⚡ Resumo rápido:
-Clean Code = legível, consistente, organizado e sem duplicações.
-Se aplica a HTML, CSS, JS e qualquer linguagem.
-Segue boas práticas agora, e você economiza tempo e evita bugs no futuro.
-
-<!-- ruim -->
-<input type="text" name="x">
-
-<!-- bom -->
-<input type="text" name="nomeUsuario" placeholder="Digite seu nome">
+        <!-- bom -->
+        <input type="text" name="nomeUsuario" placeholder="Digite seu nome" />
+      </div>
+    </footer>
+  </main>
+</header>

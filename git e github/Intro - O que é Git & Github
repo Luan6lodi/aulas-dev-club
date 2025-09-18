@@ -43,9 +43,7 @@ Git = a ferramenta que controla versões.
 
 GitHub = a plataforma que hospeda esses códigos online e facilita colaboração.
 
-Lançando 2 comits 
-
-
+Lançando 2 comits
 
 📌 Fluxo básico do Git
 
@@ -54,11 +52,9 @@ Lançando 2 comits
 | `git init`                 | Inicia um repositório Git na pasta atual.                       |
 | `git clone <url>`          | Clona um repositório remoto para sua máquina.                   |
 | `git status`               | Mostra o estado atual dos arquivos (modificados, prontos, etc). |
-| `git add <arquivo>`        | Adiciona arquivos específicos para a área de *staging*.         |
+| `git add <arquivo>`        | Adiciona arquivos específicos para a área de _staging_.         |
 | `git add .`                | Adiciona **todos** os arquivos modificados.                     |
 | `git commit -m "mensagem"` | Cria um commit com os arquivos adicionados.                     |
 | `git log --oneline`        | Mostra o histórico de commits resumido.                         |
-
-
 
 👉 No VS Code, você pode rodar esses comandos no terminal integrado (Ctrl + '), ou usar a aba Source Control (ícone de ramificação) para fazer o básico (add/commit/push) clicando.

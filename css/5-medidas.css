@@ -29,12 +29,12 @@ p {
 
 /* Percentual em relação ao pai */
 div {
-  width: 50%;  /* metade do elemento pai */
+  width: 50%; /* metade do elemento pai */
 }
 
 /* Em e rem */
 h1 {
-  font-size: 2em;  /* duas vezes o tamanho da fonte do pai */
+  font-size: 2em; /* duas vezes o tamanho da fonte do pai */
 }
 
 h2 {
@@ -43,7 +43,7 @@ h2 {
 
 /* Viewport */
 section {
-  width: 80vw;  /* 80% da largura da tela */
+  width: 80vw; /* 80% da largura da tela */
   height: 50vh; /* 50% da altura da tela */
 }
 

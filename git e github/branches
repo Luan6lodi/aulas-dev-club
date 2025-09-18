@@ -30,13 +30,13 @@ Colaboração: cada dev pode criar sua branch e depois juntar (merge) ao main.
 | `git merge nome-da-branch`       | Junta as alterações de uma branch com a atual |
 | `git branch -d nome-da-branch`   | Deleta uma branch (se já foi mesclada)        |
 
-
 # Você está no main
+
 git checkout -b nova-funcionalidade
+
 # agora trabalha nessa branch separada
 
 # depois de terminar
+
 git checkout main
 git merge nova-funcionalidade
-
-

@@ -12,13 +12,13 @@ Margin = “respirar fora do elemento”
 */
 
 /* Padding */
-padding: 10px;          /* topo, direita, baixo, esquerda iguais */
-padding: 10px 20px;     /* 10px topo/baixo, 20px direita/esquerda */
+padding: 10px; /* topo, direita, baixo, esquerda iguais */
+padding: 10px 20px; /* 10px topo/baixo, 20px direita/esquerda */
 padding: 10px 15px 20px 5px; /* topo, direita, baixo, esquerda */
 
 /* Margin */
-margin: 15px;           /* igual em todos os lados */
-margin: 10px 20px;      /* 10px topo/baixo, 20px direita/esquerda */
+margin: 15px; /* igual em todos os lados */
+margin: 10px 20px; /* 10px topo/baixo, 20px direita/esquerda */
 margin: 5px 10px 15px 20px; /* topo, direita, baixo, esquerda */
 
 /*
@@ -36,7 +36,7 @@ auto → automático (útil para centralizar).
 div {
   width: 300px;
   margin: 0 auto; /* topo/baixo = 0, esquerda/direita centralizado */
-  padding: 20px;  /* espaço dentro do div */
+  padding: 20px; /* espaço dentro do div */
   background-color: #f2f2f2;
   border: 1px solid #ccc;
 }
