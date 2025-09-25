@@ -1,0 +1,67 @@
+<!-- 📌 Estrutura HTML para rodar os exemplos acima -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo DOM</title>
+</head>
+<body>
+  <h1 id="meuTitulo">Título Original</h1>
+  <p>Primeiro parágrafo</p>
+  <p class="destaque">Parágrafo com destaque</p>
+  <button id="meuBotao">Clique em mim</button>
+
+  <script src="12-JavaScript e a DOM.js"></script>
+</body>
+</html>
+
+
+
+<!-- 📌 Conectando JavaScript nos nossos sites -->
+
+<!--
+  Existem 3 formas principais de usar JavaScript em um site:
+  1. Inline (dentro do HTML, direto no atributo).
+  2. Interno (dentro de uma tag <script> no próprio HTML).
+  3. Externo (em um arquivo separado, exemplo: script.js).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Conectando JavaScript</title>
+</head>
+<body>
+  <h1>Exemplo de Conexão do JavaScript</h1>
+
+  <!-- ----------------------------- -->
+  <!-- 📌 1. JavaScript Inline -->
+  <!-- Não é a forma mais recomendada, mas funciona para coisas simples -->
+  <button onclick="alert('Olá! Você clicou no botão!')">
+    Clique aqui (Inline)
+  </button>
+
+
+  <!-- ----------------------------- -->
+  <!-- 📌 2. JavaScript Interno -->
+  <!-- Escrevemos o código JS dentro do próprio HTML, em <script>. -->
+  <button id="btnInterno">Clique aqui (Interno)</button>
+
+  <script>
+    document.getElementById("btnInterno").addEventListener("click", () => {
+      alert("Você clicou no botão interno!");
+    });
+  </script>
+
+
+  <!-- ----------------------------- -->
+  <!-- 📌 3. JavaScript Externo -->
+  <!-- Essa é a forma mais recomendada! -->
+  <!-- Criamos um arquivo separado chamado "script.js" e conectamos aqui -->
+  <button id="btnExterno">Clique aqui (Externo)</button>
+  <script src="script.js"></script>
+
+</body>
+</html>
+
