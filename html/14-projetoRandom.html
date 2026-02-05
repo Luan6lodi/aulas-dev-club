@@ -4,16 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Randon</title>
-    <link rel="stylesheet" href="/css/16-14-projetoRandom.css" />
+    <link rel="stylesheet" href="/css/16-projetoRandom.css" />
   </head>
   <body>
-    <img src="/assets/dado.png" alt="Imagen do dado" />
-    <h1>DevLuck</h1>
-    <h2>Sortear um Número</h2>
-    <div>
-      <input placeholder="entre" class="input" />
-      <input placeholder="e" class="input" />
+    <div class="card">
+      <!-- logo -->
+      <img src="/assets/dado.png" alt="Dado" class="logo" />
+
+      <!-- título -->
+      <h1>DevSorteio</h1>
+      <p>Sortear um número aleatório</p>
+
+      <!-- inputs -->
+      <div class="inputs">
+        <input id="min" type="number" placeholder="Entre" />
+        <input id="max" type="number" placeholder="e" />
+      </div>
+
+      <!-- botão -->
+      <button onclick="sortear()">Sortear</button>
+
+      <!-- resultado -->
+      <div id="resultado">🎯 Resultado: --</div>
     </div>
-    <button>Sortear</button>
+    <script src="../JavaScript/26-projetoRandom.js"></script>
   </body>
 </html>

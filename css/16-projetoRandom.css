@@ -1,6 +1,109 @@
-   * {
+/* RESET */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* FUNDO */
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD PRINCIPAL */
+.card {
+  background: #111;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* LOGO */
+.logo {
+  width: 110px;
+  margin: 0 auto;
+  animation: flutuar 2s ease-in-out infinite;
+}
+
+/* ANIMAÇÃO DO DADO */
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* TÍTULO NEON */
+h1 {
+  color: white;
+  font-size: 38px;
+  text-shadow: 0 0 10px red, 0 0 20px red;
+}
+
+/* SUBTÍTULO */
+p {
+  color: #aaa;
+  font-size: 16px;
+}
+
+/* INPUTS */
+.inputs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+input {
+  width: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
   outline: none;
+  background: #222;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* BOTÃO */
+button {
+  margin-top: 10px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, gold, orange);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* RESULTADO */
+#resultado {
+  margin-top: 15px;
+  font-size: 20px;
+  color: gold;
+  font-weight: bold;
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  input {
+    width: 90px;
+  }
 }
